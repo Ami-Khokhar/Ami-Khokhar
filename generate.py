@@ -3,7 +3,10 @@
 Runs in CI daily. Standard library only. Reads template.svg + portrait.txt,
 fetches stats from the GitHub GraphQL API, writes both themed SVGs.
 """
+import datetime
 import json
+import os
+import sys
 import urllib.request
 from html import escape
 
@@ -85,3 +88,31 @@ def build_svg(template, portrait_lines, stats, theme):
     for key, value in {**theme, **{k: str(v) for k, v in stats.items()}}.items():
         svg = svg.replace("{%s}" % key, str(value))
     return svg
+
+
+def main():
+    token = os.environ.get("GITHUB_TOKEN")
+    if not token:
+        sys.exit("GITHUB_TOKEN is not set")
+    profile = parse_profile(graphql(PROFILE_QUERY % LOGIN, token))
+    commit_query = build_commit_query(LOGIN, profile["created_year"], datetime.date.today().year)
+    commits = parse_commits(graphql(commit_query, token))
+    stats = {
+        "REPOS": profile["REPOS"],
+        "STARS": profile["STARS"],
+        "FOLLOWERS": profile["FOLLOWERS"],
+        "COMMITS": commits,
+    }
+    with open("template.svg") as f:
+        template = f.read()
+    with open("portrait.txt") as f:
+        portrait_lines = f.read().splitlines()
+    for filename, theme in THEMES.items():
+        svg = build_svg(template, portrait_lines, stats, theme)
+        with open(filename, "w") as f:
+            f.write(svg)
+        print("wrote", filename)
+
+
+if __name__ == "__main__":
+    main()

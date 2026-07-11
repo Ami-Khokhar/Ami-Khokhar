@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="985" height="530" viewBox="0 0 985 530">
+  <style>
+    text { font-family: Consolas, Menlo, monospace; font-size: 14px; fill: #c9d1d9; }
+    .ascii { font-size: 10px; }
+    .k { fill: #58a6ff; font-weight: bold; }
+    .h { fill: #58a6ff; font-weight: bold; font-size: 16px; }
+    .m { fill: #8b949e; font-size: 11px; }
+  </style>
+  <rect width="985" height="530" rx="10" fill="#161b22"/>
+  <rect width="983" height="528" x="1" y="1" rx="10" fill="none" stroke="#8b949e" stroke-opacity="0.35"/>
+<text x="30" y="55" xml:space="preserve" class="ascii">                                                                      </text>
+<text x="30" y="66" xml:space="preserve" class="ascii">                                                 ...|.!               </text>
+<text x="30" y="77" xml:space="preserve" class="ascii">                                      .   .!.     ....   !*           </text>
+<text x="30" y="88" xml:space="preserve" class="ascii">                                    *|  !!!!.!!..  .|*!!!..!|         </text>
+<text x="30" y="99" xml:space="preserve" class="ascii">                                   *||*%%*|||..!.         !. |%       </text>
+<text x="30" y="110" xml:space="preserve" class="ascii">                                  **%%##%**|!.!!..            .|      </text>
+<text x="30" y="121" xml:space="preserve" class="ascii">                                 |#####%%%%***||!!...           .     </text>
+<text x="30" y="132" xml:space="preserve" class="ascii">                                .%#######@%|%%***%*%%*!.... .         </text>
+<text x="30" y="143" xml:space="preserve" class="ascii">                                |#######@#######%**||*#%**|!|..!!     </text>
+<text x="30" y="154" xml:space="preserve" class="ascii">                                %##########@####%***||#@##%*||%*!.    </text>
+<text x="30" y="165" xml:space="preserve" class="ascii">                                %%##@@#####%%####**%%%%###**%##*!     </text>
+<text x="30" y="176" xml:space="preserve" class="ascii">                                *#@*|*###%!!!|%%%%%#####%**%|*%%!     </text>
+<text x="30" y="187" xml:space="preserve" class="ascii">                                 #!!.!.*#|....!!!*%*%%%%*||*|*#%!     </text>
+<text x="30" y="198" xml:space="preserve" class="ascii">                                 # .||!!|!.....!|||*###%*!!****!      </text>
+<text x="30" y="209" xml:space="preserve" class="ascii">                                 @| !!|.!!.....  ..!!!!!!. .%%!       </text>
+<text x="30" y="220" xml:space="preserve" class="ascii">                                 ##%! !!.!.!..     ....!...           </text>
+<text x="30" y="231" xml:space="preserve" class="ascii">                                 %@@|.|!......     ...!....           </text>
+<text x="30" y="242" xml:space="preserve" class="ascii">                                  @%...!.......    .!|*%*!            </text>
+<text x="30" y="253" xml:space="preserve" class="ascii">                                  | .!.!!.... ..  .*%*|||*.           </text>
+<text x="30" y="264" xml:space="preserve" class="ascii">                               *@@! !!...!!!..... ....!!              </text>
+<text x="30" y="275" xml:space="preserve" class="ascii">                              *%@*..!!....!!!!....    .               </text>
+<text x="30" y="286" xml:space="preserve" class="ascii">                            !*%%#|!!!!!......!!!*#*||**|              </text>
+<text x="30" y="297" xml:space="preserve" class="ascii">                         .!!|***#%!!!!!!..!.....!!%@#@                </text>
+<text x="30" y="308" xml:space="preserve" class="ascii">                      .!**%*****%**!!!!!!!!..!!!. %@%                 </text>
+<text x="30" y="319" xml:space="preserve" class="ascii">                  .!!|||**#*|***%*%*!!!!!!!..!!!.|@@@*.!.             </text>
+<text x="30" y="330" xml:space="preserve" class="ascii">              ..!!||||||%*%***%%%%***!!!!!!!!!!!*#@@@@*!!.            </text>
+<text x="30" y="341" xml:space="preserve" class="ascii">          !!.!|!!!!!||*%#%%%******#@#|..!!!!!!..|%@@@@%%*!!..         </text>
+<text x="30" y="352" xml:space="preserve" class="ascii">        .!|**!||!!!|**%#%#%**||%#@@@#%|....     .@@@@@@|*|!!!. .      </text>
+<text x="30" y="363" xml:space="preserve" class="ascii">       !|%%%%*|*|!!!**%###%*##@@@@@@%#@#*.      %@@@##@@|!!!!.!!.     </text>
+<text x="30" y="374" xml:space="preserve" class="ascii">    !!|%%####%**%%*|!|%###@@@@@@@@@@%#@@@@%!   !@@@@@@@@#!!||.||.|.   </text>
+<text x="30" y="385" xml:space="preserve" class="ascii">  |**%####@#@%#%%##@%|##%#@##@@@@@@@@@@@@@%*% .#@#%#@@@@@*!||!|*|**.  </text>
+<text x="30" y="396" xml:space="preserve" class="ascii">  *%%##@@@@#@###%#%@@%####@%%%@@@@@@@@@@@@**@**@####%%%***!||||%**%|. </text>
+<text x="30" y="407" xml:space="preserve" class="ascii"> %%#@@@@@@@@@#@@####@#%#####%%%####%@@########@@@##%%%%%**||||!#%*%%. </text>
+<text x="30" y="418" xml:space="preserve" class="ascii">###@@@@@@@@@@@@@####@#%#######%%****#########@@#####%%%%*%*!|*||#%*#. </text>
+<text x="30" y="429" xml:space="preserve" class="ascii">@@@@@@@@@@@@@@@@@#@@@@########%%%%##########@#####%%%%%%%*%****|%#%#! </text>
+<text x="30" y="440" xml:space="preserve" class="ascii">@@@@@@@@@@@@@@@@@@@@@@####@@@@@@@@@@@@@####@@%########%%%*%%%#%####%| </text>
+<text x="30" y="451" xml:space="preserve" class="ascii">@@@@@@@@@@@@@@@@@@@@@@#@@@@@@@@@@@@@@@@@@@@@######%%###%%%|%%%*#@@##* </text>
+<text x="30" y="462" xml:space="preserve" class="ascii">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#######@@@#|%@#@#####%##!%%**@@##%% </text>
+<text x="30" y="473" xml:space="preserve" class="ascii">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@##########@@#%%#%%%##%###%%#%*@@#@@%% </text>
+<text x="30" y="484" xml:space="preserve" class="ascii">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@########@@#############%#%*#@@@@##| </text>
+<text x="30" y="495" xml:space="preserve" class="ascii">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@##@##@@@#@#@#@@@#######%%@@@@##%! </text>
+  <g transform="translate(490, 70)">
+    <text class="h" y="0">Ami-Khokhar@github</text>
+    <text class="m" y="22">-------------------------------------------</text>
+
+    <text class="k" y="56">Skills</text>
+    <text class="m" y="56" x="60">::::::::::::::::::::::::::::::::::</text>
+    <text y="82"><tspan class="k">Languages</tspan>: Python, SQL</text>
+    <text y="106"><tspan class="k">ML / AI</tspan>: Causal Inference, LLM Agents, Evals</text>
+    <text y="130"><tspan class="k">Tools</tspan>: Git, GitHub Actions, Pandas, scikit-learn</text>
+    <text y="154"><tspan class="k">Speaks</tspan>: English, Hindi, Punjabi</text>
+
+    <text class="k" y="204">GitHub Stats</text>
+    <text class="m" y="204" x="120">::::::::::::::::::::::::::::</text>
+    <text y="230"><tspan class="k">Repos</tspan>: 19</text>
+    <text y="254"><tspan class="k">Commits</tspan>: 133</text>
+    <text y="278"><tspan class="k">Stars</tspan>: 1</text>
+    <text y="302"><tspan class="k">Followers</tspan>: 1</text>
+
+    <text class="m" y="420">layout inspired by Andrew6rant</text>
+  </g>
+</svg>
