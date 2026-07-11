@@ -4,4 +4,3 @@
     <img alt="Amteshwar Singh's GitHub profile in neofetch style: an ASCII self-portrait beside skills and live stats" src="https://raw.githubusercontent.com/Ami-Khokhar/Ami-Khokhar/main/light_mode.svg">
   </picture>
 </a>
--
