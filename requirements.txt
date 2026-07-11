@@ -1,0 +1,2 @@
+# One-time portrait generation only. generate.py (run by CI) is stdlib-only.
+pillow
