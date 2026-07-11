@@ -5,7 +5,7 @@ Not used by CI; generate.py reads the committed portrait.txt.
 """
 import sys
 
-from PIL import Image
+from PIL import Image, ImageFilter, ImageOps
 
 RAMP = "@#%*|!. "  # darkest -> lightest; transparent pixels also map to space
 CHAR_ASPECT = 0.5  # monospace glyphs are roughly twice as tall as wide
@@ -31,10 +31,36 @@ def image_to_ascii(img, width=45):
     return lines
 
 
+def preprocess(img, width, gamma=1.6):
+    """Crop to the opaque subject, then brighten and sharpen for the ramp.
+
+    Autocontrast + gamma lift the mid-tones (face, shirt folds) so the output
+    uses the full ramp instead of collapsing into '@'; unsharp masking darkens
+    facial contours (brow, nose, jaw) onto denser ramp chars; a 2x LANCZOS
+    supersample to the target grid keeps thin features from aliasing away in
+    image_to_ascii's final resize. Alpha is preserved throughout.
+    """
+    img = img.convert("RGBA")
+    img = img.crop(img.getbbox())  # getbbox is alpha_only for RGBA
+    alpha = img.getchannel("A")
+    rgb = ImageOps.autocontrast(img.convert("RGB"), cutoff=2)
+    lut = [round(255 * (i / 255) ** (1 / gamma)) for i in range(256)]
+    rgb = rgb.point(lut * 3)
+    rgb = rgb.filter(ImageFilter.UnsharpMask(radius=4, percent=200, threshold=2))
+    rgb.putalpha(alpha)
+    w = width * 2
+    h = round(rgb.height / rgb.width * w)
+    return rgb.resize((w, h), Image.LANCZOS)
+
+
+PORTRAIT_WIDTH = 70  # single source of truth: preprocess supersamples to 2x this
+
+
 def main():
     if len(sys.argv) != 3:
         sys.exit("usage: python3 ascii_portrait.py <input.png> <output.txt>")
-    lines = image_to_ascii(Image.open(sys.argv[1]))
+    img = preprocess(Image.open(sys.argv[1]), width=PORTRAIT_WIDTH)
+    lines = image_to_ascii(img, width=PORTRAIT_WIDTH)
     with open(sys.argv[2], "w") as f:
         f.write("\n".join(lines) + "\n")
     print(f"wrote {len(lines)} lines to {sys.argv[2]}")
